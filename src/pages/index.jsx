@@ -61,6 +61,7 @@ function PasswordInfo() {
     const notify = (message, hasError = false) => {
         if (hasError) {
             toast.error(message, {
+                theme: "colored",
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -71,6 +72,7 @@ function PasswordInfo() {
             });
         } else {
             toast(message, {
+                theme: "colored",
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
